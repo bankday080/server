@@ -43,7 +43,7 @@ const users =[
 export const resolvers = {
   Query: {
     user: (parent, arg, context, info) => {
-        return users
+        return users.filter((users) => user.id.toString()===args.id)[0];
         
     }, /*สำคัญ */
     users: (parent, arg, context, info) => {
