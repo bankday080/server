@@ -43,6 +43,7 @@ const users =[
 export const resolvers = {
   Query: {
     user: (parent, arg, context, info) => {
+        return users
         
     }, /*สำคัญ */
     users: (parent, arg, context, info) => {
