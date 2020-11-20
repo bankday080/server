@@ -1,4 +1,5 @@
 import { gql } from "apollo-server-express";
+import { query } from "express";
 import { formatError } from "graphql"
 
 //Fake Database
@@ -47,6 +48,7 @@ export const resolvers = {
         
     }, /*สำคัญ */
     users: (parent, arg, context, info) => {
+        return users ;
 
     },
   },
